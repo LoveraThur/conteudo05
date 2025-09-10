@@ -1,4 +1,4 @@
 n1 = int(input('DIgite um numero: '))
 n2 = int(input('DIgite outro numero: '))
 
-print(max(n1, n2))
+print(f'O maior número dos informados é: {max(n1, n2)}')

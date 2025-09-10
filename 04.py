@@ -13,5 +13,5 @@ while True:
             print(f'A letra {letra} é consoante!')
             break
     else:
-        print('Eu disse uma LETRA!')
+        print('\033[33mEu disse uma \033[31;1mLETRA!\033[m')
         continue
