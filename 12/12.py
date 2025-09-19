@@ -24,8 +24,7 @@ def menu(texto):
 
     print('='*tam)
 
-
-
+#programa principal
 while True:
     try:
         hr = float(input('Digite a quantidade de horas trabalhadas no MÊS: '))
