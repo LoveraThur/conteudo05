@@ -26,4 +26,4 @@ while True:
             porcent = sallary * (5 / 100)
             aumento = sallary + porcent
             print(f'Você teve um aumento de 5%\nSeu novo salário é {aumento}')
-    break
+        break
