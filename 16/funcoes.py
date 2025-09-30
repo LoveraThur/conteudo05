@@ -1,4 +1,3 @@
-from math import sqrt
 def menu(txt):
     tam = len(txt) + 4
     print('-'*tam)
@@ -18,7 +17,7 @@ def bhaskara(a=1, b=1, c=1):
             x = -b / (2*a)
             return f'A equação possui uma raiz real \033[34mx = {x:.2f}\033[m'
         else:
-            raiz = sqrt(delta)
+            raiz = delta ** 0.5
             eq1 = (-b + raiz)/2*a
             eq2 = (-b - raiz)/2*a
             return f"A equação possui duas raizes reais: \033[34mx'= {eq1:.2f}\033[m e \033[34mx''= {eq2:.2f}\033[m"
