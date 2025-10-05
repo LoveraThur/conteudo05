@@ -5,27 +5,35 @@ def menu (txt):
     print('-'*tam)
 
 menu('Validador de Data')
-while True:
-    try:
-        data = str(input('Insira a data [dia/mês/ano]\n>>>'))
+def data_valida(data):
+    while True:
+        try:
+            dia, mes, ano = map(int, data.split('/'))
 
-        if int(data[0:2]) <= 31:
-            if int(data[3:5]) <= 12:
-                if len(data) == 10 or len(data) == 8:
-                    if data[2] == '/' and data[5] == '/':
-                        print('\033[32mEssa é uma data válida!/033[m]')
-                        break
-                    else:
-                        print('\033[31mUtilize / para separar dia, mês e ano\033[m')
-                        print('-'*30)
+            if mes >1 or mes > 12 or ano <= 0:
+                return False
+            
+            if mes in (1, 3, 5, 7, 8, 10, 12):
+                ultimo_dia = 31
+            elif mes == 2:
+                if (ano % 4 == 0) and (ano % 100 != 0 or ano % 400 == 0):
+                    ultimo_dia = 29
                 else:
-                    print('\033[31mA data deve conter 8 ou 10 caracteres\033[m')
-                    print('-'*30)
+                    ultimo_dia = 28
             else:
-                print('\033[31mVocê já viu esse mês?\033[m')
-                print('-'*30)            
-        else:
-            print('\033[31mEste dia existe?\033[m')
-            print('-'*30)
-    except:
-        print('\033[31;1mERRO! Digite corretamente\033[m')
+                ultimo_dia == 30
+            
+            if dia < 1 or dia >ultimo_dia:
+                return False
+            
+            return True
+        except ValueError:
+            return False
+        
+data = str(input('Digite uma data[dd/mm/AAAA] \n>>>'))
+validador = data_valida(data)
+
+if validador == True:
+    print('Data válida')
+else:
+    print('Data Inválida')
