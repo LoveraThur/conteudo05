@@ -4,7 +4,6 @@ def menu (txt):
     print(txt.center(tam))
     print('-'*tam)
 
-menu('Validador de Data')
 def data_valida(data):
     while True:
         try:
@@ -29,7 +28,9 @@ def data_valida(data):
             return True
         except ValueError:
             return False
-        
+
+#programa principal        
+menu('Validador de Data')
 data = str(input('Digite uma data[dd/mm/AAAA] \n>>>'))
 validador = data_valida(data)
 
