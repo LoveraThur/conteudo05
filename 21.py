@@ -44,8 +44,8 @@ while True:
 
 print('='*30)
 print('\033[32;1mSaque efetuado com sucesso!\033[m')
-print(f'Notas de 100: {nt_100}')
-print(f'Notas de 50: {nt_50}')
-print(f'Notas de 10: {nt_10}')
-print(f'Notas de 5: {nt_5}')
-print(f'Notas de 1: {nt_1}')
+print(f'Notas de R$100: {nt_100}')
+print(f'Notas de R$50: {nt_50}')
+print(f'Notas de R$10: {nt_10}')
+print(f'Notas de R$5: {nt_5}')
+print(f'Notas de R$1: {nt_1}')
