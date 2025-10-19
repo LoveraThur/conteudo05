@@ -6,10 +6,11 @@ while True:
         print('-'*30)
     else:
         try:
-            int(n)
+            n = float(n)
+            if n % 1 == 0:
+                print('O número é Inteiro')
+            else:
+                print('O número é Decimal')
         except:
-            print(f'O número {n} é decimal')
-        else:
-            print(f'O número {n} é inteiro')
-        print('-'*30)
+            print('O número é Decimal')
         break
