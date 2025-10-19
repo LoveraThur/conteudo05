@@ -11,7 +11,8 @@ while True:
         n1 = float(n1)
         n2 = float(n2)
     except:
-        print('\033[31mDigite um número válido!\033[m')
+        print('\033[31mDigite ambos números válidos!\033[m')
+        print('-'*30)
     else:
         print('-'*30)
         print('Operações'.center(30))
@@ -31,5 +32,5 @@ while True:
         else:
             res = divisao(n1, n2)
         print('-'*30)    
-        print(f'O resultado da operação é {res:.2f} \nO número arredondado é {classificacao(res)} \nele é um número {positivo_or_not(res)} \nO número é {decimal_or_not(res)}')
+        print(f'O resultado da operação é {res:.2f} \nO número é {classificacao(res)} \nele é um número {positivo_or_not(res)} \nO número é {decimal_or_not(res)}')
         break
