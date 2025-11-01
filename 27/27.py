@@ -17,3 +17,15 @@ while True:
         print('-'*30)
     else:
         break
+morangos = strawberry(morango)
+macas = apple(maca)
+if morango > 8 or morangos > 25:
+    morangos = morangos - ((10/100)*morangos)
+    print(f'=> Você irá pagar R${morangos} nos morangos')
+else:
+    print(f'=> Você irá pagar R${morangos} nos morangos')
+if maca > 8 or macas > 25:
+    vmacas = macas - ((10/100)*macas)
+    print(f'=> Você irá pagar R${macas} nas maçãs')
+else:
+    print(f'=> Você irá pagar R${macas} nas maçãs')
