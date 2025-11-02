@@ -13,4 +13,4 @@ while True:
             print('\033[35mVocê é mulher\033[m')
             break
         else:
-            continue
+            print('SEXO INVÁLIDO')
