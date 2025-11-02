@@ -2,17 +2,10 @@
 while True:
     try:
         nota1 = float(input('Digite a primeira nota: '))
-
-    except:
-        print('\033[31;1mIsso é uma nota?\033[m')
-    else: 
-        break
-while True:
-    try:
         nota2 = float(input('Digite a segunda nota: '))
     except:
         print('\033[31;1mIsso é uma nota?\033[m')
-    else:
+    else: 
         break
 
 media = (nota1 + nota2) / 2

@@ -8,3 +8,5 @@ elif v2 < v1 and v2 < v3:
     print(f'O Produto mais barato é o segundo produto, custando R${v2:.2f}')
 elif v3 < v1 and v3 < v2:
     print(f'O Produto mais barato é o terceiro produto, custando R${v3:.2f}')
+else:
+    print('Dois ou mais produtos tem o mesmo menor preço, você pode escolher qualquer um deles')

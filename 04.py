@@ -4,7 +4,7 @@ while True:
     letra = str(input('Digite uma letra: '))
 
     if len(letra) > 1:
-        print('\033[31mVocê deve digitar apenas uma letra!\033[m')
+        print('\033[31mVocê deve digitar apenas uma letra!\033[m').lower()
     elif letra.isalpha():
         if letra in vogal:
             print(f'A letra {letra} é vogal!')
